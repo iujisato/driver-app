@@ -9,7 +9,7 @@ export const routes = {
 export const options = {
   initialRouteName: 'Home',
   defaultNavigationOptions: {
-    header: props => <HeaderBar {...props} />
+    header: props => <HeaderBar {...props} />,
   },
 }
 
