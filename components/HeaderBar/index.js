@@ -7,14 +7,14 @@ import { styles } from './index.styles';
 
 class HeaderBar extends Component {
   render() {
-    const { initialRouteName, scene } = this.props;
+    const { navigation, initialRouteName, scene } = this.props;
     const { title } = scene.descriptor.options;
 
     return (
       <Header placement="left" containerStyle={styles}>
-        <MenuButton />
+        <MenuButton navigation={ navigation }/>
         <Title title={title || initialRouteName} />
-        <HomeButton />
+        <HomeButton navigation={ navigation }/>
       </Header>
     )
   }
