@@ -1,11 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
 import { ThemeProvider } from 'react-native-elements';
 import { theme } from './App.styles';
-import { createStackNavigator, createAppContainer  } from 'react-navigation';
-import { routes, options } from './routes';
+import { createAppContainer  } from 'react-navigation';
+import AppNavigator from './navigations';
 
-const AppNavigator = createStackNavigator(routes, options);
 const AppContainer = createAppContainer(AppNavigator);
 
 const App = () => {

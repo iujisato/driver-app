@@ -3,10 +3,6 @@ import { View } from 'react-native';
 import { Text } from 'react-native-elements';
 
 class HomeScreen extends Component {
-  static navigationOptions = {
-    title: 'Página inicial'
-  }
-
   render() {
     return (
       <View>
