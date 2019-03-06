@@ -25,12 +25,14 @@ const DrawerNavigator = createDrawerNavigator(drawerRoutes);
 const stackRoutes = {
   Main: {
     screen: DrawerNavigator,
-    navigationOptions: { title: 'Home stack' },
+  },
+  Login: {
+    screen: LoginNavigation,
   }
 };
 
 const rootContainerOptions = {
-  initialRouteName: 'Main',
+  initialRouteName: 'Login',
   defaultNavigationOptions: {
     header: null,
   },
