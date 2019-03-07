@@ -10,7 +10,7 @@ export const ScrollContainer = styled.ScrollView`
 `;
 
 export const LogoContainer = styled.View`
-  height: ${(height / 1618) * 568};
+  height: ${(height / 1618) * 618};
   align-items: center;
   justify-content: flex-end;
 `;
@@ -30,5 +30,4 @@ export const DividerContainer = styled.View`
 export const FormContainer = styled.View`
   align-items: center;
   justify-content: flex-start;
-  height: ${(height / 1618) * 600};
 `;

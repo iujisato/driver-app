@@ -5,7 +5,6 @@ const { height, width } = Dimensions.get('window');
 const { logo, white } = colors;
 
 export const containerStyle = {
-  marginBottom: 20,
   width: width - 50,
   justifyContent: 'center',
 }

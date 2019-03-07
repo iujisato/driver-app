@@ -1,12 +1,10 @@
 import React from 'react';
 import { KeyboardAvoidingView, Platform } from 'react-native';
 import { ScrollContainer, LogoContainer, SocialActionsContainer, DividerContainer, FormContainer} from './index.styles';
-import InputWithIcon from '../../common/inputs/InputWithIcon';
-import PasswordInput from '../../common/inputs/PasswordInput';
+import LoginForm from './LoginForm';
 import LogoIcon from '../../common/LogoIcon';
 import SocialIcon from '../../common/SocialIcon';
 import Divider from '../../common/Divider';
-import OutlineButton from '../../common/buttons/OutlineButton';
 import { colors } from '../../../colors';
 
 const Login = () => {
@@ -28,9 +26,7 @@ const Login = () => {
           </DividerContainer>
 
           <FormContainer>
-            <InputWithIcon iconName='email' placeholder='email' />
-            <PasswordInput />
-            <OutlineButton title='Sign in' />
+            <LoginForm />
           </FormContainer>
       </KeyboardAvoidingView>
     </ScrollContainer>
