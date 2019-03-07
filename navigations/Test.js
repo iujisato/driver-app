@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text } from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation';
 import HeaderBar from '../components/HeaderBar';
 
 const TestComponent = () => {
   return (
-    <Text>Test Component</Text>
+    <Text h1>CS NÃO É TRAMPO!</Text>
   )
 }
 
@@ -13,7 +13,7 @@ const routes = {
   Test: {
     screen: TestComponent,
     navigationOptions: {
-      title: 'Test navigation',
+      title: 'CS',
       header: (props) => <HeaderBar { ...props } />,
     }
   }

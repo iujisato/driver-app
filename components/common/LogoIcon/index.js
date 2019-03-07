@@ -13,4 +13,3 @@ const LogoIcon = props => {
 }
 
 export default LogoIcon;
-

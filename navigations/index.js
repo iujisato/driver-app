@@ -3,19 +3,20 @@ import HomeScreen from '../components/Home/index';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import HomeNavigation from './Home';
 import TestNavigation from './Test';
+import AuthenticationNavigation from './Authentication';
 
 // Set app navigation schema
 const drawerRoutes = {
   Home: {
     screen: HomeNavigation,
     navigationOptions: {
-      title: 'Home drawer',
+      title: 'Home',
     }
   },
   About: {
     screen: TestNavigation,
     navigationOptions: {
-      title: 'Test drawer',
+      title: 'CS',
     }
   },
 }
@@ -26,13 +27,13 @@ const stackRoutes = {
   Main: {
     screen: DrawerNavigator,
   },
-  Login: {
-    screen: LoginNavigation,
+  Authentication: {
+    screen: AuthenticationNavigation,
   }
 };
 
 const rootContainerOptions = {
-  initialRouteName: 'Login',
+  initialRouteName: 'Authentication',
   defaultNavigationOptions: {
     header: null,
   },

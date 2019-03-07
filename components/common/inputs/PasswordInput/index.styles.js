@@ -1,7 +1,8 @@
-import { colors } from '../../../colors';
+import { colors } from '../../../../colors';
 import { Dimensions } from 'react-native';
 
 const { height, width } = Dimensions.get('window');
+const { logo, white } = colors;
 
 export const containerStyle = {
   marginBottom: 20,
@@ -16,16 +17,17 @@ export const inputContainerStyle = {
 
 export const inputStyle = {
   borderBottomWidth: 1,
-  borderBottomColor: 'white',
-  color: colors.logo.green || 'white',
-  alignItems: 'flex-end',
+  borderBottomColor: white.primary,
+  color: logo.green,
   paddingBottom: 0,
 }
 
 export const leftIconContainerStyle = {
-  alignItems: 'flex-end',
-  marginBottom: 0,
-  paddingBottom: 0,
-  marginBottom: 0,
   marginRight: 8,
+}
+
+export const rightIconContainerStyle = {
+  borderBottomWidth: 1,
+  marginLeft: 0,
+  borderColor: white.primary,
 }
